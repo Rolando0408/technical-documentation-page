@@ -1,0 +1,122 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 0;
+}
+
+#navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 100%; 
+    background-color: #333;
+    color: white; 
+    padding: 1rem; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+} 
+
+
+#navbar ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin: 1rem 0; 
+}
+
+#navbar ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    display: block; 
+    padding: 0.5rem; 
+    border-radius: 5px; 
+}
+
+#navbar ul li a:hover {
+    background-color: #575757; 
+}
+
+/* Ajusta el contenido principal para que no quede debajo del navbar */
+#main-doc {
+    margin-left: 230px; 
+    padding: 1rem; 
+}
+
+.section-title{
+    font-size: 1.5rem; 
+    margin-top: 2rem; 
+    margin-bottom: 1rem; 
+    color: #333; 
+    border-top: #333 solid 1px;
+    padding-top: 1rem;
+}
+/* Quita el borde superior solo al h2 de la sección Introduction */
+#Introduction .section-title {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+p{
+    font-size: 1rem;  
+    color: #555; 
+    margin-bottom: 1rem; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Estilo para las etiquetas <code> */
+code {
+    background-color: #2d2d2d; /* Fondo oscuro */
+    color: #f8f8f2; /* Texto claro */
+    padding: 0.5rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    display: inline-block; /* Asegura que se vea como un bloque */
+}
+
+#visit-example{
+    color: white;  
+    border-radius: 5px; 
+    font-size: 1rem; 
+}
+
+#visit-example:hover{
+    background-color: #575757; 
+    color: white; 
+    text-decoration: none; 
+}
+
+/*para pantallas con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+
+    #navbar {
+        width: 100%; 
+        height: auto; 
+        position: relative;
+        box-shadow: none; 
+    }
+
+    #navbar ul {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    #navbar ul li {
+        margin: 0.5rem; 
+    }
+
+    #main-doc {
+        margin-left: 0; 
+        padding: 1rem; 
+    }
+}

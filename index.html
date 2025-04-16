@@ -7,42 +7,87 @@
     <title>Technical Documentation Page</title>
 </head>
 <body>
-    <main id="main-doc">
-        <section class="main-section" id="sect-1">
-            <header></header>
-            <p></p>
-            <p></p>
-            <code></code>
-        </section>
-        <section class="main-section" id="sect-2">
-            <header></header>
-            <p></p>
-            <p></p>
-            <code></code>
-        </section>
-        <section class="main-section" id="sect-3">
-            <header></header>
-            <p></p>
-            <p></p>
-            <code></code>
-        </section>
-        <section class="main-section" id="sect-4">
-            <header></header>
-            <p></p>
-            <p></p>
-            <code></code>
-        </section>
-        <section class="main-section" id="sect-5">
-            <header></header>
-            <p></p>
-            <p></p>
-            <code></code>
+    <head>
+        <nav id="navbar">
+            <header><h1>Technical Documentation Page</h1></header>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#Introduction" class="nav-link" >Introduction</a></li>
+                <li><a href="#HTML_Basics" class="nav-link">HTML Basics</a></li>
+                <li><a href="#CSS_Basics" class="nav-link">CSS Basics</a></li>
+                <li><a href="#Best_Practices" class="nav-link">Best Practices</a></li>
+                <li><a href="#Resources" class="nav-link">Resources</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><h2 class="section-title">Introduction</h2></header>
+            <p>This is a technical documentation page that provides an overview of HTML and CSS.</p>
+            <p>Welcome to the technical documentation page. This guide will help you understand the basics of HTML and CSS, two fundamental technologies for building web pages.</p>
+            <p>HTML (HyperText Markup Language) is used to structure content, while CSS (Cascading Style Sheets) is used to style and layout that content.</p>
+            <code>
+                <!-- Example of HTML structure -->
+                <html>
+                    <head>
+                        <title>My Page</title>
+                    </head>
+                    <body>
+                        <h1>Hello, World!</h1>
+                    </body>
+                </html>
+            </code>
+        </section>
+        <section class="main-section" id="HTML_Basics">
+            <header><h2 class="section-title">HTML Basics</h2></header>
+            <p>HTML uses a system of tags to define elements on a page. Tags are written with angle brackets, like <code>&lt;h1&gt;</code> for a heading.</p>
+            <p>Common tags include:</p>
+            <ul>
+                <li><code>&lt;h1&gt; to &lt;h6&gt;</code>: Headings</li>
+                <li><code>&lt;p&gt;</code>: Paragraphs</li>
+                <li><code>&lt;a&gt;</code>: Links</li>
+                <li><code>&lt;img&gt;</code>: Images</li>
+            </ul>
+            <code>
+                <!-- Example of a link -->
+                <a href="https://example.com" id="visit-example">Visit Example</a>
+            </code>
+        </section>
+        <section class="main-section" id="CSS_Basics">
+            <header><h2 class="section-title">CSS Basics</h2></header>
+            <p>CSS is used to style HTML elements. You can apply styles directly in the HTML file, in a separate CSS file, or inline within an element.</p>
+            <p>Basic CSS syntax:</p>
+            <code>
+                selector {
+                    property: value;
+                }
+            </code>
+            <p>Example:</p>
+            <code>
+                body {
+                    background-color: #f0f0f0;
+                    font-family: Arial, sans-serif;
+                }
+            </code>
+        </section>
+        <section class="main-section" id="Best_Practices">
+            <header><h2 class="section-title">Best Practices</h2></header>
+            <p>Here are some best practices for writing clean and maintainable HTML and CSS:</p>
+            <ul>
+                <li>Use semantic HTML tags to improve accessibility and SEO.</li>
+                <li>Keep your CSS organized by grouping related styles together.</li>
+                <li>Use external stylesheets to separate content from presentation.</li>
+                <li>Test your design on different devices and screen sizes.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Resources">
+            <header><h2 class="section-title">Resources</h2></header>
+            <p>Here are some resources to help you learn more about HTML and CSS:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs: HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs: CSS</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href="https://freecodecamp.org/">freeCodeCamp</a></li>
             </ul>
         </section>
     </main>
